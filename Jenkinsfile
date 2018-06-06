@@ -11,9 +11,9 @@ pipeline {
         git 'https://github.com/jwkidd3/thedock'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
-        sh 'docker build -t=jkidd/web .'
+        sh 'sudo docker build -t=jkidd/web .'
       }
     }
   }
